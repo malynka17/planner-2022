@@ -1,0 +1,529 @@
+:root{
+    --sidebar-width: 3em;
+    --sidebar-color: violet;
+    --button-width: 7em;
+    --button-color: indigo;
+    --button-hover-color: MediumPurple;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: LightSkyBlue;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+#sidebar{
+    top:0;
+    width: 100vw;
+    height: var(--sidebar-width);
+    background-color: var(--button-color);
+    color: ghostwhite;
+    position: sticky;
+    display: flex;
+}
+.nav-button a{
+    padding: 3em ;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-button{
+    cursor: pointer;
+    /* margin: 1em 0 1em -1em; */
+    width: var(--button-width);
+    height: var(--sidebar-width);
+  /*  transform: rotateZ(-90deg); */
+    text-decoration: none;
+}
+.nav-button:hover{
+    background-color: var(--button-hover-color) !important;
+}
+#main{
+    margin-top: 3em;
+    width: 100%;
+    height: calc(100vh - 5em);
+    scroll-behavior: smooth;
+}
+
+.outbox{
+    padding: 2em;
+}
+
+.block{
+    background-color: white;
+    margin: 10px;
+    padding: 2px;
+    -webkit-box-shadow: 24px 24px 16px -10px rgba(99, 99, 99, 0.6);
+    -moz-box-shadow: 24px 24px 16px -10px rgba(99, 99, 99, 0.6);
+    box-shadow: 24px 24px 16px -10px rgba(99, 99, 99, 0.6);
+}
+.horizontal-layout{
+    display: flex;
+  
+    width: 100%;
+}
+
+/*January*/
+#January .horizontal-layout{
+    background-color: SteelBlue;
+}
+#JanuaryDraw{
+    top: 160px;
+    left: 300px;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: currentColor; 
+    color: LightSkyBlue ;
+    box-shadow: 
+    -5px -5px currentColor,
+    5px -5px currentColor,
+    -5px 30px currentColor,
+    5px 30px currentColor,
+    0px 5px currentColor,
+    0px 10px currentColor,
+    0px 15px currentColor,
+    0px 20px currentColor,
+    0px 25px currentColor,
+    -5px 10px currentColor,
+    5px 10px currentColor,
+    -5px 15px currentColor,
+    5px 15px currentColor,
+    -10px 5px currentColor,
+    10px 5px currentColor,
+    -15px 0px currentColor,
+    15px 0px currentColor,
+    -15px -5px currentColor,
+    15px -5px currentColor,
+    20px 0px currentColor,
+    -20px 0px currentColor,
+    -10px 20px currentColor,
+    10px 20px currentColor,
+    -15px 25px currentColor,
+    15px 25px currentColor,
+    -20px 25px currentColor,
+    20px 25px currentColor,
+    15px 30px currentColor,
+    -15px 30px currentColor;
+}
+#JanuaryDraw::before{
+    content: "";
+    top: 0px;
+    left: -100px;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: currentColor; 
+    color: LightSkyBlue ;
+    box-shadow: 
+    -5px -5px currentColor,
+    5px -5px currentColor,
+    -5px 30px currentColor,
+    5px 30px currentColor,
+    0px 5px currentColor,
+    0px 10px currentColor,
+    0px 15px currentColor,
+    0px 20px currentColor,
+    0px 25px currentColor,
+    -5px 10px currentColor,
+    5px 10px currentColor,
+    -5px 15px currentColor,
+    5px 15px currentColor,
+    -10px 5px currentColor,
+    10px 5px currentColor,
+    -15px 0px currentColor,
+    15px 0px currentColor,
+    -15px -5px currentColor,
+    15px -5px currentColor,
+    20px 0px currentColor,
+    -20px 0px currentColor,
+    -10px 20px currentColor,
+    10px 20px currentColor,
+    -15px 25px currentColor,
+    15px 25px currentColor,
+    -20px 25px currentColor,
+    20px 25px currentColor,
+    15px 30px currentColor,
+    -15px 30px currentColor;
+}
+#JanuaryDraw::after{
+    content: "";
+    top: 0px;
+    left: 100px;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: currentColor; 
+    color: LightSkyBlue ;
+    box-shadow: 
+    -5px -5px currentColor,
+    5px -5px currentColor,
+    -5px 30px currentColor,
+    5px 30px currentColor,
+    0px 5px currentColor,
+    0px 10px currentColor,
+    0px 15px currentColor,
+    0px 20px currentColor,
+    0px 25px currentColor,
+    -5px 10px currentColor,
+    5px 10px currentColor,
+    -5px 15px currentColor,
+    5px 15px currentColor,
+    -10px 5px currentColor,
+    10px 5px currentColor,
+    -15px 0px currentColor,
+    15px 0px currentColor,
+    -15px -5px currentColor,
+    15px -5px currentColor,
+    20px 0px currentColor,
+    -20px 0px currentColor,
+    -10px 20px currentColor,
+    10px 20px currentColor,
+    -15px 25px currentColor,
+    15px 25px currentColor,
+    -20px 25px currentColor,
+    20px 25px currentColor,
+    15px 30px currentColor,
+    -15px 30px currentColor;
+}
+
+/*February*/
+#February .horizontal-layout{
+    background-color: cadetblue;
+}
+#FebruaryDraw{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    color: rgba(220, 20, 60, 0.5);
+    background-color: lightpink;
+   
+}
+#FebruaryDraw::before{
+    content: "";
+    position: absolute;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    color: rgba(220, 20, 60, 0.5);
+    background-color: lightpink;
+   
+}
+#FebruaryDraw::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 25px;
+    color: rgba(220, 20, 60, 0.5);
+    border-color: lightpink transparent transparent transparent;
+  
+}
+
+/*March*/
+#March .horizontal-layout{
+    background-color: PaleGreen;
+}
+#MarchDraw{
+    left: 100px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+  
+    border-radius: 25px;
+    color: yellow;
+    background-color: currentColor;
+}
+
+#MarchDraw::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 20px;
+    height: 15px;
+    border-radius: 5px;
+    color: yellow;
+    background-color: currentColor;
+}
+#MarchDraw::after{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    width: 20px;
+    height: 10px;
+    border-radius: 0px 0px 5px 5px;
+    color: grey;
+    background-color: currentColor;
+} 
+/*April*/
+#April .horizontal-layout{
+    background-color: springgreen;
+}
+#AprilDraw{
+    top: 20px;
+    left: 20px;
+    background-color: gold;
+    position: relative;
+    color: indianred;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 
+    0px -10px currentColor,
+    7px -7px rgb(255, 89, 89),
+    -10px 0px rgb(253, 109, 109),
+    7px  7px rgb(252, 124, 124),
+    0px 10px rgb(255, 122, 122),
+    -7px 7px rgb(252, 141, 141),
+    10px 0px rgb(255, 155, 155),
+    -7px -7px rgb(255, 167, 167);
+}
+#AprilDraw::before{
+    content: "";
+    top: 0px;
+    left: 50px;
+    background-color: gold;
+    position: absolute;
+    color: indianred;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 
+    0px -10px rgb(255, 82, 82),
+    7px -7px rgb(255, 89, 89),
+    -10px 0px rgb(253, 109, 109),
+    7px  7px rgb(252, 124, 124),
+    0px 10px rgb(255, 122, 122),
+    -7px 7px rgb(252, 141, 141),
+    10px 0px rgb(255, 155, 155),
+    -7px -7px rgb(255, 167, 167);
+}
+#AprilDraw::after{
+    content: "";
+    top: 0px;
+    left: 100px;
+    background-color: gold;
+    position: absolute;
+    color: PaleVioletRed;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 
+    0px -10px currentColor,
+    7px -7px rgb(255, 89, 89),
+    -10px 0px rgb(253, 109, 109),
+    7px  7px rgb(252, 124, 124),
+    0px 10px rgb(255, 122, 122),
+    -7px 7px rgb(252, 141, 141),
+    10px 0px rgb(255, 155, 155),
+    -7px -7px rgb(255, 167, 167);
+}
+
+/*May*/
+#May .horizontal-layout{
+    background-color: SandyBrown;
+}
+#MayDraw{
+    position: relative;
+    top: 5px; 
+    left: 20px;
+    background-color: white;
+    font-size: 9px;
+    color: crimson;
+    width: 40px;
+    height: 60px;
+}
+#MayDraw::before{
+    content: "";
+    left: 50px;
+    top: 5px;
+    width: 5px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+}
+#MayDraw::after{
+    content: "";
+    left: 50px;
+    top: 45px;
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 2.5px 0 2.5px;
+    border-color: black transparent transparent transparent;
+}
+
+/*June*/
+#June .horizontal-layout{
+    background-color: SandyBrown;
+}
+#JuneDraw{
+    position: relative;
+    top: 5px; 
+    left: 20px;
+    background-color: white;
+    font-size: 9px;
+    color: crimson;
+    width: 40px;
+    height: 60px;
+}
+#JuneDraw::before{
+    content: "";
+    left: 50px;
+    top: 5px;
+    width: 5px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+}
+#JuneDraw::after{
+    content: "";
+    left: 50px;
+    top: 45px;
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 2.5px 0 2.5px;
+    border-color: black transparent transparent transparent;
+}
+
+/*July*/
+#July .horizontal-layout{
+    background-color: Moccasin;
+    
+}
+#JulyDraw{
+    font-size: 20px;
+    color: crimson;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 20px;
+}
+#JulyDraw::before{
+    content: "";
+    
+    width: 5px;
+    height: 5px;
+    background-color: darkslateblue;
+    position: absolute;
+    box-shadow: 
+    5px 20px deeppink,
+    70px 10px green,
+    40px -5px lime,
+    -10px -5px red,
+    30px 20px blue,
+    30px 10px purple,
+    60px 20px yellow;
+
+
+}
+/*August*/
+#August .horizontal-layout{
+    background-color: yellowgreen;
+}
+
+#AugustDraw{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px 25px 0px 0px;
+    border-width: 5px 5px 0px 5px;
+    border-style: solid;
+    border-color: limegreen;
+    background-color: palevioletred;
+}
+#AugustDraw::before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: black;
+    box-shadow: 
+    10px 0px black,
+    15px 8px black,
+    -5px 8px black,
+    25px -5px black,
+    30px 9px black,
+    8px -8px black;
+}
+/*september*/
+#September .horizontal-layout{
+    background-color: orange;
+}
+
+
+/*October*/
+#October .horizontal-layout{
+    background-color: orangered;
+}
+
+/*November*/
+#November .horizontal-layout{
+    background-color: peru;
+}
+
+/*December*/
+#December .horizontal-layout{
+    background-color: powderblue;
+}
+#DecemberDraw{
+    position: relative;
+    top: 30px;
+    left: 20px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: cornsilk;
+}
+#DecemberDraw::before{
+    content: "";
+    top: -15px;
+    left: 10px;
+    background-color: chocolate;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px 5px 15px 15px;
+    position:absolute;
+    box-shadow: 0px 10px SaddleBrown;
+}
+#DecemberDraw::after{
+    content: "";
+    width: 5px;
+    height: 10px;
+    left: 12px;
+    top: -20px;
+    color: floralwhite;
+    background-color: currentColor;
+    position: absolute;
+    box-shadow: 
+    10px 0px currentColor,
+    20px 0px currentColor,
+    30px 0px currentColor,
+    40px 0px currentColor,
+    5px  5px lightpink,
+    15px 5px lightpink,
+    25px 5px lightpink,
+    35px 5px lightpink,
+    0px 15px lightyellow,
+    10px 15px lightyellow,
+    20px 15px lightyellow,
+    30px 15px lightyellow,
+    40px 15px lightyellow,
+    5px  20px Thistle,
+    15px 20px Thistle,
+    25px 20px Thistle,
+    35px 20px Thistle;
+}
